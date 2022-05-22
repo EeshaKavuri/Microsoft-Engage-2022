@@ -1,0 +1,50 @@
+{% extends "blog/base.html" %}
+{% block content %}
+{%load static%}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script defer src="{% static 'blog/face-api.min.js' %}"></script>
+    <script defer src="{% static 'blog/script.js' %}"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        canvas {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    
+        <div class= id="dvSuccess" style="display:none">
+        <p id='Success' style="color:green ;text-align:center; font-weight: bold;"></p>
+        
+        <button class="button button1" onclick="location.href ='/output'">Okay</button>
+    </div>
+
+    <div id="dvFailure" style="display:none">
+        <p id='Failure' style="color:red ;text-align:center; font-weight: bold;"></p>
+        
+        <button class="button button1" onclick="location.href ='/output'">Register</button>
+    </div>
+
+        <div id="divVideo" style="width:100%">
+            <video id="video"  autoplay muted></video>
+        </div> 
+    
+    <div id="screenshot"></div>
+    <input type="hidden" id="hdnCandidate" value="" />
+</body>
+{% endblock content %}

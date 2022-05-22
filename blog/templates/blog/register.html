@@ -1,0 +1,98 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<html>
+
+<head>
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+</head>
+
+<body>
+    <form class="row g-3">
+
+        <div class="col-md-5">
+            <label for="validationServer01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationServer01" required>
+        </div>
+        <div class="col-md-5">
+            <label for="validationServer02" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="validationServer02" required>
+        </div>
+        <div class="col-md-10">
+            <label for="validationServerUsername" class="form-label">Email</label>
+            <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                <input type="email" class="form-control" id="validationServerUsername"
+                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                    Please choose a username.
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <label for="validationServer03" class="form-label">Password</label>
+            <input type="text" class="form-control" id="validationServer03" required>
+        </div>
+        <div class="col-md-5">
+            <label for="validationServer03" class="form-label">Confirm Password</label>
+            <input type="text" class="form-control" id="validationServer03" required>
+        </div>
+        <br><br><br>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Registration Complete</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Thank you for registering with us! Please login to avail our services!
+                    </div>
+                    <br>
+                    <div class="modal-footer">
+                        <a class="nav-item nav-link" href="{% url 'blog-login' %}"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Got it</button></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><bbr></bbr>
+    </form>
+    <div id="my-signin2"></div>
+    <script>
+        function onSuccess(googleUser) {
+            console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+        }
+        function onFailure(error) {
+            console.log(error);
+        }
+        function renderButton() {
+            gapi.signin2.render('my-signin2', {
+                'scope': 'profile email',
+                'width': 610,
+                'height': 35,
+                'longtitle': true,
+                'theme': 'dark',
+                'onsuccess': onSuccess,
+                'onfailure': onFailure
+            });
+        }
+    </script>
+    <br>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+    <div class="col-md-6">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Submit
+        </button>
+    </div>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            Already have an account?  <a class="ml-2" href="#"> Sign in</a>
+        </small>
+    </div>
+    
+    <br><br><br><br><br><br>
+</body>
+
+</html>
+
+{% endblock content %}

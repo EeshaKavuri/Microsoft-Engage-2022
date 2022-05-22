@@ -1,0 +1,46 @@
+{% extends "blog/base.html" %}
+{% block content %}
+
+<head>
+    <style>
+        .button {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            -ms-transform: translateY(100%);
+            transform: translateY(100px);
+            transform: translateX(240%);
+        }
+
+        .button1 {
+            background-color: #1f221f;
+        }
+    </style>
+    <script>
+        function togglePopup(){
+            location.href=""
+        }
+    </script>
+</head>
+
+<body>
+    <!-- <a href="{% url 'output' %}">execute now</a> -->
+    <br>
+    <br>
+    {{ data }}
+    <br><br><br><br><br><br><br><br><br><br>
+    <button class="button button1" onclick="location.href ='/output'">Activate Web Cam</button>
+    
+    <br><br><br><br><br><br><br><br><br><br>
+</body>
+
+<br><br><br><br><br><br>
+
+
+{% endblock content %}

@@ -1,0 +1,83 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<html>
+
+<head>
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+</head>
+
+<body>
+    <form>
+        <div class="col-8">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="col-8">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div id="emailHelp" class="form-text">
+            Your password must be 8-20 characters long, contain letters and numbers, <br>
+            and must not contain spaces, special characters, or emoji.
+        </div>
+        <br>
+
+    </form>
+    <div id="my-signin2"></div>
+    <script>
+        function onSuccess(googleUser) {
+            console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+        }
+        function onFailure(error) {
+            console.log(error);
+        }
+        function renderButton() {
+            gapi.signin2.render('my-signin2', {
+                'scope': 'profile email',
+                'width': 500,
+                'height': 35,
+                'longtitle': true,
+                'theme': 'dark',
+                'onsuccess': onSuccess,
+                'onfailure': onFailure
+            });
+        }
+    
+    </script>
+    <br>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>   
+    
+    
+    <div class="col-md-6">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Submit
+        </button>
+    </div>
+    
+    <form class="row g-3">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login Successfull</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Login complete! Click here to go to the trial page
+                </div>
+                <br>
+                <div class="modal-footer">
+                    <a class="nav-item nav-link" href="{% url 'blog-home' %}"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Take me to home page</button></a>   
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+    
+    <br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>
+
+{% endblock content %}
