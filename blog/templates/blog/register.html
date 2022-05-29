@@ -1,14 +1,11 @@
 {% extends "blog/base.html" %}
 {% block content %}
 <html>
-
 <head>
     <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
 </head>
-
 <body>
     <form class="row g-3">
-
         <div class="col-md-5">
             <label for="validationServer01" class="form-label">First name</label>
             <input type="text" class="form-control" id="validationServer01" required>
@@ -29,12 +26,12 @@
             </div>
         </div>
         <div class="col-md-5">
-            <label for="validationServer03" class="form-label">Password</label>
-            <input type="text" class="form-control" id="validationServer03" required>
+            <label for="inputPassword5" class="form-label">Password</label>
+            <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
         </div>
         <div class="col-md-5">
-            <label for="validationServer03" class="form-label">Confirm Password</label>
-            <input type="text" class="form-control" id="validationServer03" required>
+            <label for="inputPassword5" class="form-label">Confirm Password</label>
+            <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
         </div>
         <br><br><br>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -50,7 +47,6 @@
                     <br>
                     <div class="modal-footer">
                         <a class="nav-item nav-link" href="{% url 'blog-login' %}"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Got it</button></a>
-                        
                     </div>
                 </div>
             </div>
@@ -89,10 +85,12 @@
             Already have an account?  <a class="ml-2" href="#"> Sign in</a>
         </small>
     </div>
-    
     <br><br><br><br><br><br>
+    <footer>
+        <p><b><br>Author: Eesha Kavuri</b><br>
+            <a href="mailto:eesha.kavuri@gmail.com"><b>eesha.kavuri@gmail.com.com</b></a>
+        </p>
+    </footer>
 </body>
-
 </html>
-
 {% endblock content %}

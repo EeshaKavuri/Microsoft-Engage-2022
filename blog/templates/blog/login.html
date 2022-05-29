@@ -8,20 +8,19 @@
 
 <body>
     <form>
-        <div class="col-8">
+        <div class="col-md-6">
             <label for="exampleInputEmail1" class="form-label">Email address</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="inputPassword5" class="form-label">Password</label>
+            <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
         </div>
-        <div class="col-8">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div id="emailHelp" class="form-text">
-            Your password must be 8-20 characters long, contain letters and numbers, <br>
-            and must not contain spaces, special characters, or emoji.
+        <div class="col-6" id="passwordHelpBlock" class="form-text">
+            <font color="gray">
+                <br>Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces,
+            special characters, or emoji.
+            </font>
         </div>
         <br>
-
     </form>
     <div id="my-signin2"></div>
     <script>
@@ -42,42 +41,41 @@
                 'onfailure': onFailure
             });
         }
-    
     </script>
     <br>
-    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>   
-    
-    
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
     <div class="col-md-6">
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Submit
         </button>
     </div>
-    
     <form class="row g-3">
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Login Successfull</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    Login complete! Click here to go to the trial page
-                </div>
-                <br>
-                <div class="modal-footer">
-                    <a class="nav-item nav-link" href="{% url 'blog-home' %}"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Take me to home page</button></a>   
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Login Successfull</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Login complete! Click here to go to the trial page
+                    </div>
+                    <br>
+                    <div class="modal-footer">
+                        <a class="nav-item nav-link" href="{% url 'blog-home' %}"><button type="button"
+                                class="btn btn-secondary" data-bs-dismiss="modal">Take me to home page</button></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</form>
-
-    
+    </form>
     <br><br><br><br><br><br><br><br><br>
+    <footer>
+        <p><b><br>Author: Eesha Kavuri</b><br>
+            <a href="mailto:eesha.kavuri@gmail.com"><b>eesha.kavuri@gmail.com.com</b></a>
+        </p>
+    </footer>
 </body>
 
 </html>
-
 {% endblock content %}

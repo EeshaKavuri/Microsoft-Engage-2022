@@ -1,17 +1,17 @@
 {% extends "blog/base.html" %}
 {% block content %}
-
+{% load static %}
 <head>
     <title>Home Page</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static 'blog/mystyle.css' %}" rel="stylesheet" crossorigin="anonymous">
     <style>
         /* Style the body */
         body {
             font-family: Arial;
             margin: 0;
         }
-
         /* Header/Logo Title */
         .header {
             padding: 120px;
@@ -23,25 +23,22 @@
             color: rgb(24, 23, 23);
             font-size: 16px;
         }
-
         /* Page Content */
         .content {
             padding: 20px;
         }
     </style>
 </head>
-
 <body>
-
     <div class="header">
         <div class="tail">
             <p><br><br></p>
             <img src="https://www.linkpicture.com/q/camLogo.png" alt="Logo" width="200" height="200"
-                style="vertical-align:middle;margin:-200px 130px">
+                style="vertical-align:middle;margin:-200px 312px">
         </div>
         <br>
         <h1><br><br>Smile Attendence tracker</h1>
-        <h5>Faster Attendence Tracking Mechanism</h5>
+        <h5>Smart Attendence Tracking Mechanism</h5>
     </div>
     <style>
         .tail {
@@ -49,26 +46,46 @@
             height: 50%;
         }
     </style>
-
     <div class="content">
         <br>
         <h1>About Us</h1>
-        <p>An Open Source Attendence tracker system to keep track of attendence.</p>
-        <p>It is completely free and can be deployed through your webcam and can be trained through images.
+        <p>
+            <style>
+                p {
+                  font-size: 16px;
+                }
+                .sc {
+                  font-variant: small-caps;
+                  }
+              </style>
         </p>
-        <p>It is absolutely safe to use. No information leakage is guaranteeed<br></p>
+        <style>
+            div {
+                text-align: justify;
+                text-justify: inter-word;
+            }
+        </style>
+        <div>
+            <p>An Open Source Attendence Tracking system to keep track of student attendence. 
+                It is completely free and can be deployed through your webcam and the best part is you can train the model through images. 
+                It is absolutely safe to use. No information leakage is guaranteed.
+                Smile to the webcam to take attendence. A message will pop up showing the status of your attendence. 
+                <br>
+                The ideal time attendance solution is one that neither a manager nor an employee needs to engage—it should be autonomous, requiring input only when absolutely necessary. 
+                Unlike keycard-based clock-in systems or other manual solutions, time and attendance software requires no interaction. 
+                Enter DeskTime: the time attendance solution that tracks an employee from the moment they turn on the computer. 
+                Regardless of whether they walk away for a break, go to a meeting, or are absent altogether, you will always know their attendance status.
+            </p>
+        </div>
+        
     </div>
-
-
     <div class="contact_info">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
                     <div
                         class="contact_info_container d-flex flex-lg-row flex-row justify-content-between align-items-between">
-
                         <br>
-
                         <!-- Contact Item -->
                         <div class="contact_info_item d-flex flex-row align-items-center justify-content-start">
                             <div class="contact_info_image"><img
@@ -78,12 +95,9 @@
                             <div class="contact_info_content">
                                 <div class="contact_info_title"><b>Phone </b></div>
                                 <div class="contact_info_text"><i> +91 9390413061</i></div>
-
                             </div>
                         </div>
-
                         <br>
-
                         <!-- Contact Item -->
                         <div class="contact_info_item d-flex flex-row align-items-center justify-content-start">
                             <div class="contact_info_image"><img
@@ -93,7 +107,6 @@
                             <div class="contact_info_content">
                                 <div class="contact_info_title"><b>Email</b> </div>
                                 <div class="contact_info_text"> <i>eesha.kavuri@gmail.com</i></div>
-
                             </div>
                         </div>
                         <br><br><br><br><br>
@@ -102,7 +115,10 @@
             </div>
         </div>
     </div>
-
+    <footer>
+        <p><b><br>Author: Eesha Kavuri</b><br>
+            <a href="mailto:eesha.kavuri@gmail.com"><b>eesha.kavuri@gmail.com.com</b></a>
+        </p>
+    </footer>
 </body>
-
 {% endblock content %}

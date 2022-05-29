@@ -1,6 +1,6 @@
 {% extends "blog/base.html" %}
 {% block content %}
-
+{% load static %}
 <head>
     <style>
         .button {
@@ -27,8 +27,8 @@
             location.href=""
         }
     </script>
+    <link href="{% static 'blog/mystyle.css' %}" rel="stylesheet" crossorigin="anonymous">
 </head>
-
 <body>
     <!-- <a href="{% url 'output' %}">execute now</a> -->
     <br>
@@ -36,11 +36,7 @@
     {{ data }}
     <br><br><br><br><br><br><br><br><br><br>
     <button class="button button1" onclick="location.href ='/output'">Activate Web Cam</button>
-    
     <br><br><br><br><br><br><br><br><br><br>
 </body>
-
 <br><br><br><br><br><br>
-
-
 {% endblock content %}

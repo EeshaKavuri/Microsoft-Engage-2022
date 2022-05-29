@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <p><br><br><br></p>
     <script defer src="{% static 'blog/face-api.min.js' %}"></script>
     <script defer src="{% static 'blog/script.js' %}"></script>
+    <!--Button style-->
     <style>
         body {
             margin: 0;
@@ -27,24 +29,32 @@
 </head>
 
 <body>
-    
-        <div class= id="dvSuccess" style="display:none">
+    <p><br><br><br><br><br><br><br><br><br></p>
+    <div id="dvSuccess" style="display:none">
         <p id='Success' style="color:green ;text-align:center; font-weight: bold;"></p>
-        
+
         <button class="button button1" onclick="location.href ='/output'">Okay</button>
+        <p><br></p>
+        
     </div>
 
     <div id="dvFailure" style="display:none">
         <p id='Failure' style="color:red ;text-align:center; font-weight: bold;"></p>
-        
+
         <button class="button button1" onclick="location.href ='/output'">Register</button>
     </div>
 
-        <div id="divVideo" style="width:100%">
-            <video id="video"  autoplay muted></video>
-        </div> 
-    
+    <div id="divVideo" height="720px" width="720px" style="width:100%">
+        <video id="video" height="720px" width="720px" autoplay muted></video>
+    </div>
+
     <div id="screenshot"></div>
     <input type="hidden" id="hdnCandidate" value="" />
+    <p><br><br><br></p>
+    <footer>
+        <p><b><br>Author: Eesha Kavuri</b><br>
+            <a href="mailto:eesha.kavuri@gmail.com"><b>eesha.kavuri@gmail.com.com</b></a>
+        </p>
+    </footer>
 </body>
 {% endblock content %}
