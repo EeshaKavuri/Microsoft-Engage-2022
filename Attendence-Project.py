@@ -1,4 +1,4 @@
-
+#This file is not included in the project, it is a file for python attendence face recognition and run locally
 
 import numpy as np
 import face_recognition
