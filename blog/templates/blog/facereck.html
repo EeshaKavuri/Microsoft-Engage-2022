@@ -1,3 +1,5 @@
+<!-- This file is used for face recognition -->
+
 {% extends "blog/base.html" %}
 {% block content %}
 {%load static%}
@@ -30,17 +32,16 @@
 
 <body>
     <p><br><br><br><br><br><br><br><br><br></p>
+    <!-- Upon success -->
     <div id="dvSuccess" style="display:none">
         <p id='Success' style="color:green ;text-align:center; font-weight: bold;"></p>
-
         <button class="button button1" onclick="location.href ='/output'">Okay</button>
         <p><br></p>
         
     </div>
-
+    <!-- upon failure -->
     <div id="dvFailure" style="display:none">
         <p id='Failure' style="color:red ;text-align:center; font-weight: bold;"></p>
-
         <button class="button button1" onclick="location.href ='/output'">Register</button>
     </div>
 
@@ -52,6 +53,7 @@
     <input type="hidden" id="hdnCandidate" value="" />
     <p><br><br><br></p>
     <footer>
+        <!-- footer -->
         <p><b><br>Author: Eesha Kavuri</b><br>
             <a href="mailto:eesha.kavuri@gmail.com"><b>eesha.kavuri@gmail.com.com</b></a>
         </p>
