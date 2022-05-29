@@ -6,6 +6,10 @@ Face Recognition : Smile Attendance Tracking System
 2. Change directory to django_project
 3. manage.py is out main file
 4. In your command prompt enter: _python manage.py runserver_
+5. Please make sure to include "runserver" in the end otherwise the local host link will not be generated.
+6. Copt paste the http link in your browser to view the page.
+
+
 
 **Requirements:**
 (To use the Attendence-Project.py outside)
@@ -16,4 +20,3 @@ The following Python modules/packages has to be installed in your System:
 3. wheel
 4. face_recognition
 5. opencv-python
-![1  Home Page](https://user-images.githubusercontent.com/88975253/170863790-7a198c36-d02d-46fe-bc8e-ef6de07c0954.png)
