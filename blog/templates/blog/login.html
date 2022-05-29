@@ -1,3 +1,5 @@
+<!-- login page -->
+
 {% extends "blog/base.html" %}
 {% block content %}
 <html>
@@ -9,6 +11,7 @@
 <body>
     <form>
         <div class="col-md-6">
+            <!--login details  -->
             <label for="exampleInputEmail1" class="form-label">Email address</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             <label for="inputPassword5" class="form-label">Password</label>
@@ -24,6 +27,7 @@
     </form>
     <div id="my-signin2"></div>
     <script>
+        <!-- google signup api -->
         function onSuccess(googleUser) {
             console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
         }
@@ -43,6 +47,7 @@
         }
     </script>
     <br>
+    <!-- api linking -->
     <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
     <div class="col-md-6">
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -58,7 +63,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        Login complete! Click here to go to the trial page
+                        Login complete! Click here to go to the Attendence page
                     </div>
                     <br>
                     <div class="modal-footer">
@@ -71,6 +76,7 @@
     </form>
     <br><br><br><br><br><br><br><br><br>
     <footer>
+        <!-- footer -->
         <p><b><br>Author: Eesha Kavuri</b><br>
             <a href="mailto:eesha.kavuri@gmail.com"><b>eesha.kavuri@gmail.com.com</b></a>
         </p>
