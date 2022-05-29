@@ -8,8 +8,11 @@ Face Recognition : Smile Attendance Tracking System
 4. In your command prompt enter: _python manage.py runserver_
 
 **Requirements:**
+(To use the Attendence-Project.py outside)
+Please not that Attendence-Project.py is not used anywhere in the project. It is a file I created to use face recognition in python.
 The following Python modules/packages has to be installed in your System:
 1. cmake
 2. dlib
 3. wheel
 4. face_recognition
+5. opencv-python
