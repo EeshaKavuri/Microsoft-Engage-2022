@@ -9,6 +9,7 @@ Face Recognition : Smile Attendance Tracking System
 5. Please make sure to include "runserver" in the end otherwise the local host link will not be generated.
 6. Copt paste the http link in your browser to view the page.
 
+![cmd runserver](https://user-images.githubusercontent.com/88975253/170863999-7f672bad-3d87-41bd-b044-77ce779c98ed.jpg)
 
 
 **Requirements:**
