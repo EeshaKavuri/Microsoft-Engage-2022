@@ -16,3 +16,4 @@ The following Python modules/packages has to be installed in your System:
 3. wheel
 4. face_recognition
 5. opencv-python
+![1  Home Page](https://user-images.githubusercontent.com/88975253/170863790-7a198c36-d02d-46fe-bc8e-ef6de07c0954.png)
