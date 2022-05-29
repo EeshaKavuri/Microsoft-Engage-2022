@@ -11,6 +11,8 @@ Face Recognition : Smile Attendance Tracking System
 ![cmd runserver](https://user-images.githubusercontent.com/88975253/170864104-85770d38-a232-484f-9e4d-e5ca278b956e.jpg)
 
 6. Copy and paste the above HTTP link into your browser to view the page.
+7. You can exit the server in your command prompt by entering (break): CTRL+C 
+8. Please note that the localhost cannot be activated unless you properly host it in the command prompt.
 
 **How the application works:**
 1. As with any other online website you can register and login into the server.
@@ -20,6 +22,8 @@ Face Recognition : Smile Attendance Tracking System
 5. The page shows that you might be new and provides you a button that will redirect you to the New student registration page (or directly use the new student option in the navigation bar), you can enter your name and select a picture of you and press upload.
 6. If you are an already existing student, a custom message will be displayed on your screen stating that your attendance is taken.
 7. There is a chatbot feature that, of course, is not fully deployed. As of now, you can send in your request.
+
+About the folders and files in the respository:
 
 
 **Requirements:**
