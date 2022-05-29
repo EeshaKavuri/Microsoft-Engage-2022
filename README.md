@@ -45,3 +45,4 @@ The following Python modules/packages have to be installed in your System:
 3. wheel
 4. face_recognition
 5. opencv-python
+
