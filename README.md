@@ -23,7 +23,15 @@ Face Recognition : Smile Attendance Tracking System
 6. If you are an already existing student, a custom message will be displayed on your screen stating that your attendance is taken.
 7. There is a chatbot feature that, of course, is not fully deployed. As of now, you can send in your request.
 
-About the folders and files in the respository:
+**About the folders and files in the repository:**
+1. _.vscode:_ This contains settings files for the JSON
+2. _blog:_ This is the main folder where all our code is present
+  _- The static folders are parsed automatically and have CSS and style codes. 
+  - The templates folder has the HTML files needed to host each page for our website. 
+  - The models files are used to train the machine to recognize faces, the latency of the application is dependent on this. 
+  - All the other files are Django default files)_
+3. _django_project:_ This is the Django default folder that has pre-setup files.
+4. _manage.py:_ Our main source code file that is to be implemented.
 
 
 **Requirements:**
