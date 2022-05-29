@@ -1,3 +1,5 @@
+<!--To keep the code DRY this file is inherited by other html pages  -->
+
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link href="{% static 'blog/mystyle.css' %}" rel="stylesheet" crossorigin="anonymous">
-
     <link rel="stylesheet" type="text/css" href="{% static 'blog/mai.css' %}">
     <style>
         footer {
@@ -24,6 +25,7 @@
     {% endif %}
 </head>
 <!--Start of Tawk.to Script-->
+    <!--chatbot  -->
 <link rel="shortcut icon" type="image/x-icon" href="https://yt3.ggpht.com/a/AATXAJxNzhrr6U_f3g7-NkveiVGUq8MdiKp9vO0oXg=s900-c-k-c0xffffffff-no-rj-mo" />
 <script type="text/javascript">
     var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
