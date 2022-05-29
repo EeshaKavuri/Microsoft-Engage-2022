@@ -35,8 +35,10 @@ Face Recognition : Smile Attendance Tracking System
 
 
 **Requirements:**
+
 (To use the Attendance-Project.py outside)
-Please note that Attendance-Project.py is not used anywhere in the project. It is a file I created to use face recognition in python.
+Please note that Attendance-Project.py is not used anywhere in the project. 
+It is a file I created to use face recognition in python.
 The following Python modules/packages have to be installed in your System:
 1. cmake
 2. dlib
